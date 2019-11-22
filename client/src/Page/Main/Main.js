@@ -1,12 +1,12 @@
 import React from 'react';
-import Map from '../../components/Map/Map.js';
+import Hero from '../../components/Hero/Hero';
 
 class Main extends React.Component {
     render() {
         return(
-            <Main className= "main">
-                <Map />
-            </Main>
+            <main className= "main">
+                <Hero />
+            </main>
         );
     }
 }
