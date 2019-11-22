@@ -1,12 +1,19 @@
 import React from 'react';
+import './Main.scss';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-class Main extends React.Component {
+GoogleApiWrapper extends React.Component {
     render() {
         return (
-            <main className="main">
-                
-            </main>
+            <Map
+              google={this.props.google}
+              zoom={8}
+              style={mapStyles}
+              initialCenter={{ lat: 47.444, lng: -122.176}}
+            />
         );
-    }
+      }
 }
-export default Main;
+export default GoogleApiWrapper({
+    apiKey: 'TOKEN HERE'
+  })(MapContainer);

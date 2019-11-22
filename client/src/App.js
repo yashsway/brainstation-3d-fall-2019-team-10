@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
+import Main from './components/Main/Main';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Helmet>
         <title>Your App Title Here</title>
       </Helmet>
+      <Main />
     </div>
   );
 }
