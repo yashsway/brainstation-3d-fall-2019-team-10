@@ -1,0 +1,67 @@
+@import '../styles/reset.scss';
+@import '../styles/utils/base';
+@import '../styles/utils/variables';
+@import '../styles/utils/breakpoints';
+
+
+
+.main-container{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.province-description-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.title-img-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.province-container{
+    width: 175px;
+    height: 61px;
+    font-size: 30px;
+}
+
+.img-container{
+    width: 351px;
+    height: 257px;
+}
+.toronto-img{
+    width: 100%;
+    height: 100%;
+}
+
+.quebec-float{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+}
+.title-quebec{
+    color: white;
+}
+
+.province-container-quebec{
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.quebec-text{
+    text-align: right;
+    margin-right: 10px;
+}
