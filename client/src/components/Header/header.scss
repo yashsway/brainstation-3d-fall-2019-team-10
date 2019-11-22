@@ -1,36 +1,66 @@
-@import '../../styles/reset.scss';
-@import '../../styles/utils/base';
-@import '../../styles/utils/variables';
-@import '../../styles/utils/breakpoints';
+@import "../../styles/reset.scss";
+@import "../../styles/utils/base";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/breakpoints";
 
-.p{
-font-size: 50px;
-}
+// .p{
+// font-size: 50px;
+// }
 
-.main-header-container{
+// .main-header-container{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     margin-bottom: 100px;
+//     margin-top: 40px;
+// }
+
+// .div-right{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .about{
+//     margin-right: 30px;
+//     height: 100px;
+// }
+
+// .logo{
+//     width: 200px;
+//     align-self: center;
+// }
+
+// .publications{
+//     height: 100px;
+// }
+
+.main-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-logo {
+    & img {
+      padding: 25px;
+      width: 30%;
+    }
+  }
+
+  &-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 100px;
-    margin-top: 40px;
-}
-
-.div-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about{
-    margin-right: 30px;
-    height: 100px;
-}
-
-.logo{
-    
-}
-
-.publications{
-    height: 100px;
+    justify-content: space-evenly;
+  }
+  .about {
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 5px;
+  }
+  .publications{
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 5px;
+  }
 }

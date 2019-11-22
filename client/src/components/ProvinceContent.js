@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './provincecontent.scss'
-import torontoimg from './assets/image.png'
-import quebecimg from './assets/imageQ.png'
+import torontoimg from '../assets/image.png'
+import quebecimg from '../assets/imageQ.png'
 
 export default class ProvinceContent extends Component {
     state={
