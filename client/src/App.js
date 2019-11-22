@@ -1,27 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
-
+import React, { Component } from 'react'
+import Map from './components/Map'
 import { Helmet } from 'react-helmet';
+import Header from './components/Header';
 
-function App() {
+
+export default class App extends Component {
+
+  render(){
+
   return (
     <div className="App">
       {/* NOTE: Keep the helmet code below and change the app title.
           Add any meta tags you want, or any tag you want to go in the header. 
           You can modify everything else! */}
       <Helmet>
-        <title>Your App Title Here</title>
+        <title>This is our app!</title>
       </Helmet>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h2>Brainstation 3D Starter - Toqa and Luca</h2>
-      </header>
+      <Header />
+      <Map />
     </div>
   );
 }
+}
 
-export default App;
