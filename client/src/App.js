@@ -3,6 +3,7 @@ import Map from './components/Map'
 import { Helmet } from 'react-helmet';
 import Header from './components/Header';
 import ProvinceContent from './components/ProvinceContent';
+import Footer from './components/Footer';
 
 
 export default class App extends Component {
@@ -20,6 +21,7 @@ export default class App extends Component {
       <Header />
       <Map />
       <ProvinceContent />
+      <Footer />
     </div>
   );
 }
