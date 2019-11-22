@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
+import './Main.scss';
 
 class Main extends React.Component {
     render() {
