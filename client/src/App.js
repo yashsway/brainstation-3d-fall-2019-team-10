@@ -1,17 +1,22 @@
-import React from 'react';
-
+import React, { Component } from 'react'
+import Map from './components/Map'
 import { Helmet } from 'react-helmet';
-import Main from './components/Main/Main';
+import Header from './components/Header';
 
-function App() {
+
+export default class App extends Component {
+
+  render(){
+
   return (
     <div className="App">
       <Helmet>
-        <title>Your App Title Here</title>
+        <title>This is our app!</title>
       </Helmet>
-      <Main />
+      <Header />
+      <Map />
     </div>
   );
 }
+}
 
-export default App;
